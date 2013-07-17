@@ -1,12 +1,12 @@
 $(document).ready(function(){
-	$(contentTextBox).load("news_item.php", function(responseText, statusText, xhr){
+	$(contentTextBox).load("news_item.php?tID=1", function(responseText, statusText, xhr){
 
 	});
 });
 
 $(document).ready(function(){
 	$("#n1").click(function(event){
-		$("#contentTextBox").load("news_item.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=1", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n2").click(function(event){
-		$("#contentTextBox").load("news_item2.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=2", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n3").click(function(event){
-		$("#contentTextBox").load("news_item3.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=3", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n4").click(function(event){
-		$("#contentTextBox").load("news_item4.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=4", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n5").click(function(event){
-		$("#contentTextBox").load("news_item5.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=5", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n6").click(function(event){
-		$("#contentTextBox").load("news_item6.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=6", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n7").click(function(event){
-		$("#contentTextBox").load("news_item7.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=7", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -76,7 +76,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n8").click(function(event){
-		$("#contentTextBox").load("news_item8.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=8", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n9").click(function(event){
-		$("#contentTextBox").load("news_item9.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=9", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
@@ -96,7 +96,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n10").click(function(event){
-		$("#contentTextBox").load("news_item10.php", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=10", function(responseText, statusText, xhr){
 			/*if(statusText==="error"){
 				alert("Error loading content!");
 			}*/
