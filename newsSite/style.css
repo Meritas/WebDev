@@ -172,6 +172,16 @@ body{
 	display: inline-block;
 	z-index: 0;
 }
+
+#imgBox{
+
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	z-index: 0;
+}
+
 #contentImageIndexFooting{
 
 	position: relative;
@@ -210,4 +220,9 @@ body{
 	text-align: center;
 	background-color: orange;
 	margin: 5px 0px 5px 0px;
+}
+
+#register label, input{
+
+	display: block;
 }
