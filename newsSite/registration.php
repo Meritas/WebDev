@@ -3,9 +3,10 @@
     <title>Index</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="gen_validatorv4.js" type="text/javascript"></script>
 </head>
 <body>
-<form method="post" action="check.php" enctype="multipart/form-data">
+<form method="post" action="check.php" enctype="multipart/form-data" id="register">
     <fieldset >
         <legend>Register</legend>
         <input type='hidden' name='submitted' id='submitted' value='1'/>
@@ -22,9 +23,8 @@
         <input type='submit' name='registration' value='Sign up' />     
     </fieldset>
 </form>
-<script type="text/javascript">
-    var frmvalidator  = new Validator("register");
-    frmvalidator.EnableOnPageErrorDisplay();
+<script>
+    var frmvalidator = new Validator("register");
     frmvalidator.EnableMsgsTogether();
     frmvalidator.addValidation("name","req","Please provide your name");
      

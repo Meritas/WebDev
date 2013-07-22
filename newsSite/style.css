@@ -222,6 +222,10 @@ body{
 	margin: 5px 0px 5px 0px;
 }
 
+fieldset{
+
+	display: inline-block;
+}
 #register label, input{
 
 	display: block;
