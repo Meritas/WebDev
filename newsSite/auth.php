@@ -10,12 +10,14 @@ $stmt->bind_param('ss', $username, $password);
 
 $stmt->execute();
 
+session_start();
+
+$_SESSION['username'] = $username;
 $stmt->store_result();
 if($stmt->num_rows==1){
-	echo "smt";
+	echo "Logged in successfuly";
 	$stmt->bind_result($id);
 	$stmt->fetch();
+	header("refresh:2;url=./index.php");
 }
-
-echo "$id";
 ?>

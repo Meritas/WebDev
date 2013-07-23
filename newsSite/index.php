@@ -1,4 +1,4 @@
-<!doctype HTML>
+<?php session_start(); ?>
 <html>
 <head>
 <title>Top Stories</title>
@@ -32,8 +32,27 @@
 		</div>
 	</div>
 	<div id="body">
-		<div id="rightBar"><!--AD bar-->
-		</div>		
+		<div id="authDiv">
+			<?php 
+				if(isset($_SESSION['username'])){
+			?>
+					<p>
+						Welcome, <?= $_SESSION['username'];?>
+						<a href="logout.php">(logout)</a>
+					</p>
+			<?php
+				} else { ?>				
+					<p>
+						<a href="registration.php">Create an account</a> | 
+						<a href="login.php">Login to your account</a>
+					</p>
+			<?php
+				}
+			?>
+			<div id="rightBar"><!--AD bar-->
+			</div>	
+		</div>
+			
 		<div id="contentWrapper">
 			<div id="indexHeadingWrapper">
 			<div id="indexHeading">
@@ -66,6 +85,9 @@
 			<div id="contentTextBox">
 			
 			</div>
+		</div>
+		<div id="lastNews">
+
 		</div>
 		<div id="footer">
 			Footer
