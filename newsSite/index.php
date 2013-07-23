@@ -71,8 +71,7 @@
 			</div>
 			</div>
 			<div id="contentImageIndex">
-				<div id="contentImageIndexBox">
-					<!--<img id="topStoryImage" src="./media/images/image1.jpg">-->
+				<div id="contentImageIndexBox">					
 					<div id="imgBox">
 					</div>
 					<div id="contentImageIndexFooting">						

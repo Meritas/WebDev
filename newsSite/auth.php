@@ -19,5 +19,5 @@ if($stmt->num_rows==1){
 	$stmt->bind_result($id);
 	$stmt->fetch();
 	header("refresh:2;url=./index.php");
-}
+}	
 ?>

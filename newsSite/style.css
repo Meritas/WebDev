@@ -56,7 +56,7 @@ body{
 #body{
 
 	margin-top: 5px;
-	padding-top: 75px;
+	padding-top: 60px;
 	height: 100%;
 	margin-right: 5px;
 	margin-left: 5px;	
@@ -71,6 +71,18 @@ body{
 	padding-left: 5px;
 	padding-right: 5px;
 	border-style: solid;
+}
+
+#leftBar ul{
+
+	list-style: none;
+	padding: 0;
+	padding-left: 15px;
+}
+
+#leftBar ul li{
+
+	margin-bottom: 5px;
 }
 
 #contentWrapper{
@@ -213,6 +225,11 @@ body{
 	height: 500px;
 	width: 250px;
 	background-color: purple;
+}
+
+#lastNews{
+
+	clear: both;
 }
 
 #footer{
