@@ -14,7 +14,7 @@
 		<div id="navMenu">
 			<ul>
 				<li>
-					<a href="PC.html">PC</a>
+					<a href="PC.php">PC</a>
 				</li>
 				<li>
 					<a href="PC.html">PlayStation</a>
@@ -85,8 +85,32 @@
 			
 			</div>
 		</div>
-		<div id="lastNews">
-
+		<div id="ANbox"><!--additional news box-->
+			<div id="PCnews">
+				<h2>PC</h2>
+				<span>News #1</span>
+				<span>News #2</span>
+			</div>
+			<div id="PSnews">
+				<h2>PS</h2>
+				<span>News #1</span>
+				<span>News #2</span>
+			</div>
+			<div id="XBOXnews">
+				<h2>XBOX</h2>
+				<span>News #1</span>
+				<span>News #2</span>
+			</div>
+			<div id="WIInews">
+				<h2>WII</h2>
+				<span>News #1</span>
+				<span>News #2</span>			
+			</div>
+			<div id="OTHERSnews">
+				<h2>Others</h2>
+				<span>News #1</span>
+				<span>News #2</span>			
+			</div>
 		</div>
 		<div id="footer">
 			Footer

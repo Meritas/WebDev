@@ -19,7 +19,7 @@ body{
 	height: 50px;
 	background-color: lightblue;
 	text-align: center;
-	z-index: 1;
+	z-index: 2;
 }
 
 #navBar ul{
@@ -64,6 +64,7 @@ body{
 
 #leftBar{
 
+	
 	float: left;
 	margin-left: 5px;
 	margin-right: 10px;
@@ -71,6 +72,7 @@ body{
 	padding-left: 5px;
 	padding-right: 5px;
 	border-style: solid;
+	display: inline-block;
 }
 
 #leftBar ul{
@@ -88,7 +90,6 @@ body{
 #contentWrapper{
 
 	min-height: 100%;
-	margin-right: 255px;
 	background-color: blue;
 	/*min-height: 922px;*/
 	min-height: 96%;
@@ -221,15 +222,10 @@ body{
 #rightBar{
 
 	float: right;
-
+	margin-left: 5px;
 	height: 500px;
 	width: 250px;
 	background-color: purple;
-}
-
-#lastNews{
-
-	clear: both;
 }
 
 #footer{
@@ -252,4 +248,53 @@ fieldset{
 #authDiv{
 
 	float: right;
+}
+
+#ANbox{
+
+	margin-top: 20px;
+}
+
+#ANbox div{
+
+	
+	width: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	display: inline-block;
+	background-color: gold;
+	border-style: double;
+}
+
+#ANbox div span{
+
+	margin-left: 15px;
+	margin-bottom: 10px;
+	text-decoration: underline;
+	font-size: 1.2em;
+	float: left;
+	clear: left;
+}
+
+#ANbox div h2{
+
+	padding:0;
+	margin-top: 0px;
+	text-align: center;
+}
+
+#commentBox{
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#commentBox span{
+
+	display: block;
+	width: auto;
+	height: 75px;
+	background-color: white;
+	border-style: dotted;
+	border-color: red;
 }
