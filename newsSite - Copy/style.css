@@ -50,6 +50,7 @@ body{
 
 #navBar ul li a:hover{
 
+	border-color: orange;
 	border-style: groove;
 }
 
