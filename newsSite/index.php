@@ -1,4 +1,13 @@
 <?php session_start(); ?>
+
+<?php
+	function getCategory( $id ){
+		$clink = new mysqli("localhost", "root", "", "newssite");
+		$query = $clink->query("SELECT name FROM categories WHERE id={$id};");
+		$fRow = $query->fetch_row();
+		echo $fRow[0];
+	}
+?>
 <html>
 <head>
 <title>Top Stories</title>
@@ -14,19 +23,19 @@
 		<div id="navMenu">
 			<ul>
 				<li>
-					<a href="PC.php">PC</a>
+					<a href="PC.php"><?php echo(getCategory(1)); ?> </a>
 				</li>
 				<li>
-					<a href="PC.html">PlayStation</a>
+					<a href="PC.html"><?php echo(getCategory(2)); ?></a>
 				</li>
 				<li>
-					<a href="PC.html">XBOX</a>
+					<a href="PC.html"><?php echo(getCategory(3)); ?></a>
 				</li>
 				<li>
-					<a href="PC.html">WII</a>
+					<a href="PC.html"><?php echo(getCategory(4)); ?></a>
 				</li>
 				<li>
-					<a href="PC.html">Others</a>
+					<a href="PC.html"><?php echo(getCategory(5)); ?></a>
 				</li>
 			</ul>
 		</div>
