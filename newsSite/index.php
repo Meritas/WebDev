@@ -1,11 +1,20 @@
 <?php session_start(); ?>
 
 <?php
-	function getCategory( $id ){
+	function getCategory( $ord ){
 		$clink = new mysqli("localhost", "root", "", "newssite");
-		$query = $clink->query("SELECT name FROM categories WHERE id={$id};");
+		$query = $clink->query("SELECT name FROM categories WHERE cOrder={$ord};");
 		$fRow = $query->fetch_row();
 		echo $fRow[0];
+		$clink->close();
+	}
+	
+	function getLink( $id ){
+		$clink = new mysqli("localhost", "root", "", "newssite");
+		$query = $clink->query("SELECT link FROM categories WHERE id={$id};");
+		$fRow = $query->fetch_row();
+		echo $fRow[0];
+		$clink->close();
 	}
 ?>
 <html>
@@ -23,19 +32,19 @@
 		<div id="navMenu">
 			<ul>
 				<li>
-					<a href="PC.php"><?php echo(getCategory(1)); ?> </a>
+					<a href="<?php echo(getLink(1)); ?>"><?php echo(getCategory(1)); ?> </a>
 				</li>
 				<li>
-					<a href="PC.html"><?php echo(getCategory(2)); ?></a>
+					<a href="<?php echo(getLink(2)); ?>"><?php echo(getCategory(2)); ?></a>
 				</li>
 				<li>
-					<a href="PC.html"><?php echo(getCategory(3)); ?></a>
+					<a href="<?php echo(getLink(3)); ?>"><?php echo(getCategory(3)); ?></a>
 				</li>
 				<li>
-					<a href="PC.html"><?php echo(getCategory(4)); ?></a>
+					<a href="<?php echo(getLink(4)); ?>"><?php echo(getCategory(4)); ?></a>
 				</li>
 				<li>
-					<a href="PC.html"><?php echo(getCategory(5)); ?></a>
+					<a href="<?php echo(getLink(5)); ?>"><?php echo(getCategory(5)); ?></a>
 				</li>
 			</ul>
 		</div>
