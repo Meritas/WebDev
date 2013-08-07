@@ -20,8 +20,15 @@
 	<style>
 		td{
 			vertical-align: center;
+			text-align: center;
+		}
+		input{
+			margin-left: auto;
+			margin-right: auto;
 		}
 	</style>
+	<script src="jquery.js"></script>
+	<script src="acp-script.js"></script>
 </head>
 <body>
 
@@ -30,34 +37,41 @@
 		<h4 style="margin-left: 10px; margin-top: 15px;">Categories</h4>
 	</tr>
 	<tr>
-		<td>Id</td>
+		<td>Order</td>
 		<td>Name</td>
+		<td>ID</td>
 	</tr>
 	<?php
 		$link = new mysqli("localhost", "root", "", "newssite");
-		$query = $link->query("SELECT COUNT(id) FROM categories");
+		$query = $link->query("SELECT COUNT(cOrder) FROM categories");
 		$fRow = $query->fetch_row();
 		$number = $fRow[0];
-		$query = $link->query("SELECT id, name FROM categories ORDER BY id ASC");
+		$query = $link->query("SELECT cOrder, name, id FROM categories ORDER BY cOrder ASC");
 		for($i = 0; $i < $number; $i++){
 			$fRow = $query->fetch_row();
 			echo(
 				"<tr>
-					<td>{$fRow[0]}</td>
-					<td>{$fRow[1]}</td>"
-					.'<td>
-						<form action="acp_cat.php?fVar='.$fRow[0].'" method="post">
+					<td>
+						<span class='MOVELEFT' id=_ml{$fRow[2]} style='display: block; margin-bottom: 10px; padding: 2px; font-style: italic; font-size: 0.8em; border-style: solid;'>Move left</span>
+						{$fRow[0]}
+						<span class='MOVERIGHT' id=_mr{$fRow[2]} style='display: block; margin-top: 10px; padding: 2px; font-style: italic; font-size: 0.8em; border-style: solid;'>Move right</span>
+						</td>
+					<td style='text-align: center;' >{$fRow[1]}</br>"
+					.  '<span style="font-style: italic; font-size: 0.7em;">Change name</span>
+						<form action="acp_cat.php?fVar='.$fRow[2].'" method="post">
 						<input type="text" name="catName">
-					 </td>'
-					.'<td>
 						<input type="submit">
 						</form>
-					 </td>'					 
+					</td>
+					<td>'
+						.$fRow[2]
+					.'</td>'
 				."</tr>"
 				);
 		}
 		$link->close();
 		?>
-	</table>
+</table>
+<div id="loaderDiv" style="visibility: hidden" ></div>	
 </body>
 </html>
