@@ -1,6 +1,11 @@
 <?php
 	if( isset($_POST['submitted']) ){
-		exit('haha');
+		$con = new mysqli("localhost", "root", "", "newssite");
+		$name = $con->real_escape_string($_POST['name']);
+		$title = $con->real_escape_string($_POST['title']);
+		$content = $con->real_escape_string($_POST['content']);
+		$query = $con->query("INSERT INTO news_items(cID, title, content) VALUES({$_GET['cID']}, '{$title}', '{$content}')"); 
+		exit("Post added successfuly");
 	}
 ?>
 <html>
@@ -10,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">    
 </head>
 <body>
-<form method="post" action="post_item.php" enctype="multipart/form-data" id="post_item_form">
+<form method="post" action="post_item.php?cID=<?php echo $_GET['cID']?>" enctype="multipart/form-data" id="post_item_form">
 	<fieldset>
 		<input type='hidden' name='submitted' id='submitted' value='1'/>
 		<label for='name' >Post author: </label>

@@ -16,6 +16,21 @@
 		echo $fRow[0];
 		$clink->close();
 	}
+	
+	function getTitle( $cID, $ord ){
+		$clink = new mysqli("localhost", "root", "", "newssite");
+		$query = $clink->query("SELECT title FROM news_items WHERE cID={$cID} ORDER BY id DESC;");
+		/*if( $ord==1 ){
+			$title = $query->fetch_row();
+			return $title;
+		}*/
+		for( $i=1; $i<=$ord; $i++ ){
+			$fRow = $query->fetch_row();
+			if( $i==$ord ){
+				return $fRow[0];
+			}
+		}
+	}
 ?>
 <html>
 <head>
@@ -104,30 +119,30 @@
 			</div>
 		</div>
 		<div id="ANbox"><!--additional news box-->
-			<div id="PCnews">
-				<h2>PC</h2>
-				<span>News #1</span>
-				<span>News #2</span>
+			<div id="cat1">
+				<h2><?php echo(getCategory(1)); ?></h2>
+				<span id='cat1item1'><?php echo getTitle(1, 1); ?></span>
+				<span id='cat1item2'><?php echo getTitle(1, 2); ?></span>
 			</div>
-			<div id="PSnews">
-				<h2>PS</h2>
-				<span>News #1</span>
-				<span>News #2</span>
+			<div id="cat2">
+				<h2><?php echo(getCategory(2)); ?></h2>
+				<span id='cat1item1'><?php echo getTitle(2, 1); ?></span>
+				<span id='cat1item2'><?php echo getTitle(2, 2); ?></span>
 			</div>
-			<div id="XBOXnews">
-				<h2>XBOX</h2>
-				<span>News #1</span>
-				<span>News #2</span>
+			<div id="cat3">
+				<h2><?php echo(getCategory(3)); ?></h2>
+				<span id='cat1item1'><?php echo getTitle(3, 1); ?></span>
+				<span id='cat1item2'><?php echo getTitle(3, 2); ?></span>
 			</div>
-			<div id="WIInews">
-				<h2>WII</h2>
-				<span>News #1</span>
-				<span>News #2</span>			
+			<div id="cat4">
+				<h2><?php echo(getCategory(4)); ?></h2>
+				<span id='cat1item1'><?php echo getTitle(4, 1); ?></span>
+				<span id='cat1item2'><?php echo getTitle(4, 2); ?></span>
 			</div>
-			<div id="OTHERSnews">
-				<h2>Others</h2>
-				<span>News #1</span>
-				<span>News #2</span>			
+			<div id="cat5">
+				<h2><?php echo(getCategory(5)); ?></h2>
+				<span id='cat1item1'><?php echo getTitle(5, 1); ?></span>
+				<span id='cat1item2'><?php echo getTitle(5, 2); ?></span>
 			</div>
 		</div>
 		<div id="footer">

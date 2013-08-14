@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$(contentTextBox).load("news_item.php?tID=1", function(responseText, statusText, xhr){
 
 	});
-	$("#contentImageIndexFooting h2").load("./pages/n_page10.html", function(responseText, statusText, xhr){
+	$("#contentImageIndexFooting h2").load("news_title.php?tID=1", function(responseText, statusText, xhr){
 
 	});
 	$("#imgBox").load("news_image.php?tID=1", function(responseText, statusText, xhr){
@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#n1").click(function(event){
-		$("#contentTextBox").load("news_item.php?tID=100", function(responseText, statusText, xhr){
+		$("#contentTextBox").load("news_item.php?tID=1", function(responseText, statusText, xhr){
 			if(statusText==="error"){
 				alert("Error loading content!");
 			}

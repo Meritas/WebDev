@@ -40,6 +40,7 @@
 		<td>Order</td>
 		<td>Name</td>
 		<td>ID</td>
+		<td></td>
 	</tr>
 	<?php
 		$link = new mysqli("localhost", "root", "", "newssite");
@@ -66,6 +67,10 @@
 					<td>'
 						.$fRow[2]
 					.'</td>'
+					.'<td><form action="./post_item.php?cID='.$fRow[0].'" method="post">
+							<input type="submit" value="Post article">
+						  </form>
+					 </td>'
 				."</tr>"
 				);
 		}
