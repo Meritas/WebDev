@@ -53,6 +53,11 @@ body{
 	border-style: groove;
 }
 
+#navBar ul li a:visited:hover{
+
+	border-style: groove;
+}
+
 #body{
 
 	margin-top: 5px;
@@ -289,14 +294,21 @@ fieldset{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
 #commentBox span{
 
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
-	height: 75px;
+	min-height: 75px;
 	background-color: white;
 	border-style: dotted;
 	border-color: red;
+	overflow: 
+}
+
+#commentBox form{
+	
+	margin-left: 5px;
 }

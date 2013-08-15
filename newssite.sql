@@ -39,11 +39,25 @@ CREATE TABLE IF NOT EXISTS `categories` (
 --
 
 INSERT INTO `categories` (`id`, `cOrder`, `name`, `link`) VALUES
-(1, 1, 'PC', './cat1.php'),
-(2, 5, 'PlayStation', './cat2.php'),
-(3, 2, 'XBOX', './cat3.php'),
-(4, 4, 'WII', './cat4.php'),
+(1, 5, 'PC', './cat1.php'),
+(2, 4, 'PlayStation', './cat2.php'),
+(3, 2, 'XBOX2', './cat3.php'),
+(4, 1, 'WII', './cat4.php'),
 (5, 3, 'Others', './cat5.php');
+
+-- --------------------------------------------------------
+
+--
+-- Структура на таблица `comments`
+--
+
+CREATE TABLE IF NOT EXISTS `comments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `aID` int(11) NOT NULL,
+  `author` varchar(26) NOT NULL,
+  `content` varchar(5000) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -58,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `news_items` (
   `content` text NOT NULL,
   `isrc` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Ссхема на данните от таблица `news_items`
@@ -74,7 +88,8 @@ INSERT INTO `news_items` (`id`, `cID`, `title`, `content`, `isrc`) VALUES
 (7, 1, 'qwer', 'qwer', NULL),
 (8, 1, 'random_title', 'random_content', NULL),
 (9, 2, 'custom title', 'custom content', NULL),
-(10, 1, 'hhtitle', 'heyho', NULL);
+(10, 1, 'hhtitle', 'heyho', NULL),
+(11, 1, 'nova tema', 'nov content', NULL);
 
 -- --------------------------------------------------------
 

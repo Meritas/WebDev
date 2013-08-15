@@ -10,6 +10,9 @@
 		<div id="navMenu">
 			<ul>
 				<li>
+					<a href="index.php">Home</a>
+				</li>
+				<li>
 					<a href="PC.html">PC</a>
 				</li>
 				<li>
@@ -58,6 +61,15 @@
 			</div>
 			<div id="contentTextBox">
 				This is some content...
+			</div>
+			<div id="commentBox">
+			<span>Comment</span>
+			<span>Comment</span>
+			<span>Comment</span>
+			<span>Comment</span>
+			<span>Comment</span>
+			<span>Comment</span>
+			<span>Comment</span>
 			</div>
 		</div>
 		<div id="footer">

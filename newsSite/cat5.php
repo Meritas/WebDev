@@ -10,7 +10,7 @@
 		<div id="navMenu">
 			<ul>
 				<li>
-					<a href="index.html">Home</a>
+					<a href="index.php">Home</a>
 				</li>
 				<li>
 					<a href="PC.html">PC</a>

@@ -1,37 +1,8 @@
-<?php session_start(); ?>
-
-<?php
-	function getCategory( $ord ){
-		$clink = new mysqli("localhost", "root", "", "newssite");
-		$query = $clink->query("SELECT name FROM categories WHERE cOrder={$ord};");
-		$fRow = $query->fetch_row();
-		echo $fRow[0];
-		$clink->close();
-	}
-	
-	function getLink( $id ){
-		$clink = new mysqli("localhost", "root", "", "newssite");
-		$query = $clink->query("SELECT link FROM categories WHERE id={$id};");
-		$fRow = $query->fetch_row();
-		echo $fRow[0];
-		$clink->close();
-	}
-	
-	function getTitle( $cID, $ord ){
-		$clink = new mysqli("localhost", "root", "", "newssite");
-		$query = $clink->query("SELECT title FROM news_items WHERE cID={$cID} ORDER BY id DESC;");
-		/*if( $ord==1 ){
-			$title = $query->fetch_row();
-			return $title;
-		}*/
-		for( $i=1; $i<=$ord; $i++ ){
-			$fRow = $query->fetch_row();
-			if( $i==$ord ){
-				return $fRow[0];
-			}
-		}
-	}
+<?php 
+	session_start();
+	include_once "phpLib.php";
 ?>
+
 <html>
 <head>
 <title>Top Stories</title>
