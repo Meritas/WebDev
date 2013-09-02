@@ -23,7 +23,7 @@ include_once "config.php";
 		}
 	}
 	
-	function getContent( $cID, $ord ){		
+	function getContent( $cID, $ord ){	
 		$query = $GLOBALS['clink']->query("SELECT content FROM news_items WHERE cID={$cID} ORDER BY id DESC;");
 		for( $i=1; $i<=$ord; $i++ ){
 			$fRow = $query->fetch_row();
@@ -31,9 +31,11 @@ include_once "config.php";
 		}
 	}
 	
-	function getCategoriesExcept( $id ){
+	function getCategoriesExcept( $id ){	
+		$fRow = $GLOBALS['clink']->query("SELECT COUNT(id) FROM categories")->fetch_row();
+		$count = $fRow[0];
 		$query = $GLOBALS['clink']->query("SELECT name, link FROM categories WHERE id!={$id} ORDER BY cOrder ASC;");
-		for( $i=1; $i<=4; $i++ ){
+		for( $i=1; $i<=$count; $i++ ){
 			$fRow = $query->fetch_row();
 			echo "<li><a href='{$fRow[1]}'>{$fRow[0]}</a></li>";
 		}

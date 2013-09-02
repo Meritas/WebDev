@@ -4,11 +4,6 @@
 	$GLOBALS['cID'] = 1;
 ?>
 
-<?php/*
-	if( isset($_POST['submitted']) ){
-		$dblink = new mysqli("localhost", "root", "", "newssite");
-		$query = new*/
-?>
 <html>
 <head>
 	<title>Index</title>

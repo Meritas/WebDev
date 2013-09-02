@@ -70,6 +70,10 @@
 					.'<td><form action="./post_item.php?cID='.$fRow[0].'" method="post">
 							<input type="submit" value="Post article">
 						  </form>
+					 </td>
+					 <td><form action="./delete_cat.php?cID='.$fRow[0].'" method="post">
+							<input type="submit" value="Delete category">
+						 </form>
 					 </td>'
 				."</tr>"
 				);
