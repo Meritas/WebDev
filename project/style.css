@@ -1,0 +1,136 @@
+body{
+
+	height: 100%;
+	width: 100%;
+}
+
+#containerForm{
+
+	height: 100%;
+	width: 100%;
+}
+
+#containerForm div{
+
+	position: absolute;
+}
+
+input[type="submit"]{
+
+	position: absolute;
+	display: block;;
+}
+
+input[type="file"]{
+
+	position: absolute;
+	display: inline;
+}
+
+.tv, .addLeft, .addBot{
+	position: absolute;
+	border-style: solid;
+	display: inline-block;
+	z-index: -1;
+}
+
+.tv{
+	height: 60%;
+	width: 70%; 
+	border-style: solid; 
+	float: right;
+	z-index: -1;
+	left: 25%;
+}
+
+.addLeft{
+
+	width: 25%;
+	height: 60%;
+}
+
+#leftAddFileInput{
+
+	top: 55%;
+	left: 2%;
+}
+
+.botAddFileInput{
+
+	top: 77%;
+	left: 1%;
+}
+
+.addBot{
+
+	height: 100%;
+}
+
+#botContainer{
+
+	top: 65%;
+	height: 30%;
+	width: 100%;
+}
+
+#tv3{
+	height: 550px;
+	width: 1200px;
+	border-style: solid;
+	display: inline-block;
+	float: none;
+}
+
+#r1_1{
+
+}
+
+#r1_2{ 
+
+	width: 40%;
+}
+
+#r1_3{
+
+	left: 43%;
+	width: 50%;
+}
+
+#r1_3FileInput{
+
+	left: 44%;
+}
+
+#r2_1{
+	height: 550px; 
+	width: 200px; 
+	border-style: solid; 
+	display: inline-block;
+}
+
+#r2_2{
+	height: 200px; 
+	width: 1100px; 
+	border-style: solid; 
+	display: inline-block;
+}
+
+#r3_1, #form1{
+	position: absolute;
+	z-index: -1;
+}
+
+#r3_1{
+	height: 400px;
+	width: 1100px;
+	top: 570px;
+	border-style: solid;
+}
+
+#form1{
+	top: 930px;
+	right: 950px;
+	z-index: 3;
+	display: inline;
+	background-color: red;
+}

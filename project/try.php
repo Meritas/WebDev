@@ -20,16 +20,20 @@ function call_cases_form(){
 
 function call_case($case){
 
-	$case1_str = '<div id="container">
-			<div id="r1_1" class="add">
+	$case1_str = '<form id="containerForm">
+			<div id="r1_1" class="addLeft">
 			</div>
+			<input type="file" id="leftAddFileInput">
 			<div id="tv1" class="tv">
 			</div>
-			<div id="r1_2" class="add">
+			<div id="botContainer">
+				<div id="r1_2" class="addBot">
+				</div>
+				<input type="file"class="botAddFileInput">
+				<div id="r1_3" class="addBot"></div>
+				<input type="file" class="botAddFileInput" id="r1_3FileInput">
 			</div>
-			<div id="r1_3" class="add">
-			</div>
-		</div>
+		</form>
 	';
 	$case2_str = '<div id="container">
 			<div id="r2_1" class="add"></div>
@@ -59,75 +63,7 @@ function call_case($case){
 <html>
 <head>
 <title>Try</title>
-<style>
-	input[type="submit"]{
-		display: block;
-	}
-	.tv, .add{
-		border-style: solid;
-	}
-	.tv{
-		height: 550px;
-		width: 700px; 
-		border-style: solid; 
-		display: inline-block; 
-		float: right;
-	}
-	#tv3{
-		height: 550px;
-		width: 1200px;
-		border-style: solid;
-		display: inline-block;
-		float: none;
-	}
-	#r1_1{
-		height: 550px; 
-		width: 200px; 
-		border-style: solid; 
-		display: inline-block;
-	}
-	#r1_2{
-		height: 200px; 
-		width: 450px; 
-		border-style: solid; 
-		display: inline-block;
-	}
-	#r1_3{
-		height: 200px; 
-		width: 450px; 
-		border-style: solid; 
-		display: inline-block;
-	}
-	#r2_1{
-		height: 550px; 
-		width: 200px; 
-		border-style: solid; 
-		display: inline-block;
-	}
-	#r2_2{
-		height: 200px; 
-		width: 1100px; 
-		border-style: solid; 
-		display: inline-block;
-	}
-	#r3_1, #form1{
-		position: absolute;
-		z-index: -1;
-	}
-	#r3_1{
-		height: 400px;
-		width: 1100px;
-		top: 570px;
-		border-style: solid;
-	}
-	#form1{
-		top: 930px;
-		right: 950px;
-		z-index: 3;
-		display: inline;
-		background-color: red;
-	}
-</style>
+ <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 <?php
