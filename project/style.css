@@ -37,10 +37,9 @@ input[type="file"]{
 .tv{
 	height: 60%;
 	width: 70%; 
-	border-style: solid; 
 	float: right;
 	z-index: -1;
-	left: 25%;
+	left: 27%;
 }
 
 .addLeft{
