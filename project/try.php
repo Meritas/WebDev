@@ -21,36 +21,60 @@ function call_cases_form(){
 function call_case($case){
 
 	$case1_str = '<form id="containerForm">
-			<div id="r1_1" class="addLeft">
-			</div>
-			<input type="file" id="leftAddFileInput">
-			<div id="tv1" class="tv">
-			</div>
-			<div id="botContainer">
-				<div id="r1_2" class="addBot">
+			<div id="containerDiv">
+				<div id="r1_1" class="addLeft">
 				</div>
-				<input type="file"class="botAddFileInput">
-				<div id="r1_3" class="addBot"></div>
-				<input type="file" class="botAddFileInput" id="r1_3FileInput">
-			</div>
+				<input type="file" id="leftAddFileInput">
+				<div id="tv1" class="tv">
+				</div>
+				<div id="botContainer">
+					<div id="r1_2" class="addBot">
+					</div>
+					<input type="file"class="botAddFileInput">
+					<div id="r1_3" class="addBot"></div>
+					<input type="file" class="botAddFileInput" id="r1_3FileInput">
+				</div>
+			</div>			
+			<div id="submitContainer">
+				<input type="submit" value="Apply Changes" id="submitButton">
+			</div>	
 		</form>
 	';
-	$case2_str = '<div id="container">
-			<div id="r2_1" class="add"></div>
-			<div id="tv2" class="tv"></div>
-			<div id="r2_2" class="add" style="">
+	$case2_str = '<form id="containerForm">
+			<div id="containerDiv">
+				<div id="r2_1" class="addLeft">
+				</div>
+				<input type="file" id="leftAddFileInput">
+				<div id="tv2" class="tv">
+				</div>
+				<div id="botContainer">
+					<div id="r2_2" class="addBot">
+					</div>
+					<input type="file" class="botAddFileInput" id="r2_2FileInput">
+				</div>
 			</div>
-		</div>
+			<div id="submitContainer">
+				<input type="submit" value="Apply Changes" id="submitButton">
+			</div>	
+		</form>
 	';
-	$case3_str = '<div id="container">
-			<div id="tv3" class="tv">
-			</div>
-			<div id="r3_1" class="add">
-			</div>
-			<form method="post" action="'.$_SERVER['PHP_SELF'].'" id="form1">
-				<input type="file">
-			</form>
-		</div>
+	$case3_str = '<form id="containerForm">
+			<div id="containerDiv">
+				<div id="r3_1" class="addLeft">
+				</div>
+				<input type="file" id="r3_1FileInput">
+				<div id="tv3" class="tv">
+				</div>
+				<div id="botContainer">
+					<div id="r3_2" class="addBot">
+					</div>
+					<input type="file" class="botAddFileInput" id="r3_2FileInput">
+				</div>
+			</div>			
+			<div id="submitContainer">
+				<input type="submit" value="Apply Changes" id="submitButton">
+			</div>	
+		</form>
 	';
 
 	$result = array($case1_str, $case2_str, $case3_str);
@@ -74,4 +98,4 @@ function call_case($case){
 	}
 ?>
 </body>
-</html>
+</html> 
