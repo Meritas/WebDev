@@ -24,15 +24,15 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r1_1" class="addLeft">
 				</div>
-				<div id="r1_1FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
+				<div id="r1_1FileContainer" class="fileContainer"><input type="file" name="file1_1" id="file1_1" class="fileInput"></div>
 				<div id="tv1" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r1_2" class="addBot">
 					</div>
-					<div id="r1_2FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
+					<div id="r1_2FileContainer" class="fileContainer"><input type="file" name="file1_2" id="file1_2" class="fileInput"></div>
 					<div id="r1_3" class="addBot"></div>
-					<div id="r1_3FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
+					<div id="r1_3FileContainer" class="fileContainer"><input type="file" name="file1_3" id="file1_3" class="fileInput"></div>
 				</div>
 			</div>			
 			<div id="submitContainer">
@@ -44,13 +44,13 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r2_1" class="addLeft">
 				</div>
-				<div id="r2_1FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
+				<div id="r2_1FileContainer" class="fileContainer"><input type="file" name="file2_1" id="file2_1" class="fileInput"></div>
 				<div id="tv2" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r2_2" class="addBot">
 					</div>
-				<div id="r2_2FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
+				<div id="r2_2FileContainer" class="fileContainer"><input type="file" name="file2_2" id="file2_2" class="fileInput"></div>
 				</div>
 			</div>
 			<div id="submitContainer">
@@ -62,14 +62,14 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r3_1" class="addLeft">
 				</div>
-				<div id="r3_1FileContainer" class="fileContainer"><input type="file" id="f" class="fileInput"/></div>
+				<div id="r3_1FileContainer" class="fileContainer"><input type="file" name="file3_1" id="file3_1" class="fileInput"/></div>
 				<img id="testImage"/>
 				<div id="tv3" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r3_2" class="addBot">
 					</div>
-				<div id="r3_2FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
+				<div id="r3_2FileContainer" class="fileContainer"><input type="file" id="file3_2" class="fileInput"></div>
 				</div>
 			</div>			
 			<div id="submitContainer">
