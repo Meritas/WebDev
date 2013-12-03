@@ -24,15 +24,15 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r1_1" class="addLeft">
 				</div>
-				<input type="file" id="leftAddFileInput">
+				<div id="r1_1FileContainer" class="fileContainer"><input type="file"></div>
 				<div id="tv1" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r1_2" class="addBot">
 					</div>
-					<input type="file"class="botAddFileInput">
+					<div id="r1_2FileContainer" class="fileContainer"><input type="file"></div>
 					<div id="r1_3" class="addBot"></div>
-					<input type="file" class="botAddFileInput" id="r1_3FileInput">
+					<div id="r1_3FileContainer" class="fileContainer"><input type="file"></div>
 				</div>
 			</div>			
 			<div id="submitContainer">
@@ -44,13 +44,13 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r2_1" class="addLeft">
 				</div>
-				<input type="file" id="leftAddFileInput">
+				<div id="r2_1FileContainer" class="fileContainer"><input type="file"></div>
 				<div id="tv2" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r2_2" class="addBot">
 					</div>
-					<input type="file" class="botAddFileInput" id="r2_2FileInput">
+				<div id="r2_2FileContainer" class="fileContainer"><input type="file"></div>
 				</div>
 			</div>
 			<div id="submitContainer">
@@ -62,13 +62,13 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r3_1" class="addLeft">
 				</div>
-				<input type="file" id="r3_1FileInput">
+				<div id="r3_1FileContainer" class="fileContainer"><input type="file"></div>
 				<div id="tv3" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r3_2" class="addBot">
 					</div>
-					<input type="file" class="botAddFileInput" id="r3_2FileInput">
+				<div id="r3_2FileContainer" class="fileContainer"><input type="file"></div>
 				</div>
 			</div>			
 			<div id="submitContainer">

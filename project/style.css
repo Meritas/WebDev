@@ -24,20 +24,28 @@ body{
 input[type="submit"]{
 
 	position: absolute;
-	display: block;;
 }
 
 input[type="file"]{
 
 	position: absolute;
-	display: inline;
+}
+
+.fileContainer{
+
+	height: 8%;
+	width: 20%;
+	position: absolute;
+	overflow: hidden;
 }
 
 #submitContainer{
 
 	top: 94%;
 	width: 90%;
+	height: 6%;
 	text-align: center;
+	overflow: hidden;
 }
 
 #submitButton{
@@ -50,6 +58,7 @@ input[type="file"]{
 	border-style: solid;
 	display: inline-block;
 	z-index: -1;
+	overflow: hidden;
 }
 
 .tv{
@@ -81,6 +90,7 @@ input[type="file"]{
 
 .addBot{
 
+	top: ;
 	height: 100%;
 }
 
@@ -89,15 +99,30 @@ input[type="file"]{
 	top: 65%;
 	height: 30%;
 	width: 100%;
+	z-index: -2;
 }
 
 #r1_1{
 
 }
 
+#r1_1FileContainer{
+
+	top: 50%;
+	left: 2%;
+}
+
 #r1_2{ 
 
 	width: 23%;
+}
+
+#r1_2FileContainer{
+
+	height: 26%;
+	width: 20%;
+	left: 2%;
+	top: 67%;
 }
 
 #r1_3{
@@ -106,15 +131,26 @@ input[type="file"]{
 	width: 71%;
 }
 
+#r1_3FileContainer{
+
+	top: 67%;
+	height: 26%;
+	left: 28%;
+}
 #r1_3FileInput{
 
-	left: 27%;
 }
 
 #r2_1{
 
 	border-style: solid; 
 	display: inline-block;
+}
+
+#r2_1FileContainer{
+
+	top: 50%;
+	left: 2%;
 }
 
 #r2_2{
@@ -127,7 +163,13 @@ input[type="file"]{
 
 #r2_2FileInput{
 
+}
+
+#r2_2FileContainer{
+
 	left: 2%;
+	top: 68%;
+	height: 26%;
 }
 
 #r3_1{
@@ -135,9 +177,9 @@ input[type="file"]{
 	height: 95%;
 }
 
-#r3_1FileInput{
+#r3_1FileContainer{
 
-	top: 90%;
+	top: 85%;
 	left: 2%;
 }
 
@@ -147,7 +189,12 @@ input[type="file"]{
 	left: 26%;
 }
 
-#r3_2FileInput{
+#r3_2FileContainer{
 
+	z-index: 5;
 	left: 28%;
+	top: 67%;
+	height: 30%;
+	overflow: hidden;
+	width: 20%;
 }
