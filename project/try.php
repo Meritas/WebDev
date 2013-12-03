@@ -24,15 +24,15 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r1_1" class="addLeft">
 				</div>
-				<div id="r1_1FileContainer" class="fileContainer"><input type="file"></div>
+				<div id="r1_1FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
 				<div id="tv1" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r1_2" class="addBot">
 					</div>
-					<div id="r1_2FileContainer" class="fileContainer"><input type="file"></div>
+					<div id="r1_2FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
 					<div id="r1_3" class="addBot"></div>
-					<div id="r1_3FileContainer" class="fileContainer"><input type="file"></div>
+					<div id="r1_3FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
 				</div>
 			</div>			
 			<div id="submitContainer">
@@ -44,13 +44,13 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r2_1" class="addLeft">
 				</div>
-				<div id="r2_1FileContainer" class="fileContainer"><input type="file"></div>
+				<div id="r2_1FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
 				<div id="tv2" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r2_2" class="addBot">
 					</div>
-				<div id="r2_2FileContainer" class="fileContainer"><input type="file"></div>
+				<div id="r2_2FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
 				</div>
 			</div>
 			<div id="submitContainer">
@@ -62,13 +62,14 @@ function call_case($case){
 			<div id="containerDiv">
 				<div id="r3_1" class="addLeft">
 				</div>
-				<div id="r3_1FileContainer" class="fileContainer"><input type="file"></div>
+				<div id="r3_1FileContainer" class="fileContainer"><input type="file" id="f" class="fileInput"/></div>
+				<img id="testImage"/>
 				<div id="tv3" class="tv">
 				</div>
 				<div id="botContainer">
 					<div id="r3_2" class="addBot">
 					</div>
-				<div id="r3_2FileContainer" class="fileContainer"><input type="file"></div>
+				<div id="r3_2FileContainer" class="fileContainer"><input type="file" class="fileInput"></div>
 				</div>
 			</div>			
 			<div id="submitContainer">
@@ -90,6 +91,8 @@ function call_case($case){
  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
+<script src='jquery.js'></script>
+<script src='script.js'></script>
 <?php
 	if(isset($_POST['choice'])){
 		call_case($_POST['choice']);
