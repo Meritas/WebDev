@@ -9,20 +9,20 @@ function setAllowedRes(){
 	resHash['file3_1'] = {};
 	resHash['file3_2'] = {};
 
-	resHash['file1_1']['x'] = 0;
-	resHash['file1_1']['y'] = 0;
-	resHash['file1_2']['x'] = 0;
-	resHash['file1_2']['y'] = 0;
-	resHash['file1_3']['x'] = 0;
-	resHash['file1_3']['y'] = 0;
-	resHash['file2_1']['x'] = 0;
-	resHash['file2_1']['y'] = 0;
-	resHash['file2_2']['x'] = 0;
-	resHash['file2_2']['y'] = 0;
-	resHash['file3_1']['x'] = 0;
-	resHash['file3_1']['y'] = 0;
-	resHash['file3_2']['x'] = 0;
-	resHash['file3_2']['y'] = 0;
+	resHash['file1_1']['x'] = 1000;
+	resHash['file1_1']['y'] = 1000;
+	resHash['file1_2']['x'] = 1000;
+	resHash['file1_2']['y'] = 1000;
+	resHash['file1_3']['x'] = 1000;
+	resHash['file1_3']['y'] = 1000;
+	resHash['file2_1']['x'] = 1000;
+	resHash['file2_1']['y'] = 1000;
+	resHash['file2_2']['x'] = 1000;
+	resHash['file2_2']['y'] = 1000;
+	resHash['file3_1']['x'] = 1000;
+	resHash['file3_1']['y'] = 1000;
+	resHash['file3_2']['x'] = 1000;
+	resHash['file3_2']['y'] = 1000;
 }
 
 function hasExtension(arg){
@@ -41,7 +41,6 @@ function hasExtension(arg){
 function isPicture( argFile ){
 	var a = argFile.split(".");
 	format = a[1];
-	alert(format);
 	if( hasExtension(a)!=1 ){
 		return 0;
 	}
