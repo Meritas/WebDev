@@ -1,25 +1,38 @@
+html{
+
+	   height: 100%;
+	   overflow-x:hidden;
+}
+
 body{
 
 	height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+
 }
 
-#containerForm{
 
+#containerForm{
+	position: absolute;
+	z-index: 1;
+	margin-left: 1%;
 	height: 100%;
 	width: 100%;
 }
 
+
 #containerDiv{
 
-	height: 92%;
+	height: 90%;
 	width: 100%;
 }
 
 #containerForm div{
 
 	position: absolute;
-	z-index: 1;
+
 }
 
 input[type="submit"]{
@@ -31,6 +44,23 @@ input[type="submit"]{
 input[type="file"]{
 
 	position: absolute;
+}
+
+#MenuBar{
+	display: inline-block;
+	height: 100%;
+	width: 0%;
+	background-color: black;		
+	float: left;
+}
+
+#HideBut {
+	opacity:0;
+	/*visibility: hidden;*/
+	float: left;
+	height: 100%;
+	width: 3px;
+	background-color: yellow;
 }
 
 .fileContainer{
@@ -55,17 +85,22 @@ input[type="file"]{
 
 	display: inline-block;
 }
-.tv, .addLeft, .addBot{
+.addLeft, .addBot{
 
 	position: absolute;
 	border-style: solid;
+	border-radius: 5%;
 	display: inline-block;
 	z-index: -1;
 	overflow: hidden;
 }
 
 .tv{
-
+	position: absolute;
+	border-style: solid;
+	display: inline-block;
+	overflow: hidden;
+	
 	height: 60%;
 	width: 70%; 
 	float: right;
@@ -111,9 +146,10 @@ input[type="file"]{
 }
 
 #r1_1FileContainer{
-
+	
 	top: 50%;
 	left: 2%;
+
 }
 
 #r1_2{ 

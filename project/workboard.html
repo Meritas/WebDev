@@ -1,9 +1,33 @@
-<div id="container">
-	<div id="tv" style="height: 550px; width: 900px; border-style: solid; display: inline-block; position: absolute; z-index: -1;">
-	</div>
-	<div id="r1" style="height: 400px; width: 450px; border-style: solid; display: inline-block; position: absolute; z-index: -1;">
-	</div>
-	<form method="post" action="'.$_SERVER['PHP_SELF'].'" style="position: absolute; z-index: 2;">
-		<input type="submit">
-	</form>
-</div>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="./style.css">
+</style>
+</head>
+
+<body>
+
+<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
+			<input type="hidden" name="submitted" value="1" />
+			
+			<div id="containerDiv">
+				<div id="MenuBar"></div>
+				<div id="HideBut"></div>
+				<div id="r1_1" class="addLeft">
+				</div>
+				<div id="r1_1FileContainer" class="fileContainer"><input type="file" name="file1_1" id="file1_1" class="fileInput"></div>
+				<div id="tv1" class="tv">
+				</div>
+				<div id="botContainer">
+					<div id="r1_2" class="addBot">
+					</div>
+					<div id="r1_2FileContainer" class="fileContainer"><input type="file" name="file1_2" id="file1_2" class="fileInput"></div>
+					<div id="r1_3" class="addBot"></div>
+					<div id="r1_3FileContainer" class="fileContainer"><input type="file" name="file1_3" id="file1_3" class="fileInput"></div>
+				</div>
+			</div>			
+			<div id="submitContainer">
+				<input type="submit" value="Apply Changes" id="submitButton">
+			</div>	
+		</form>
+		
+</body>
