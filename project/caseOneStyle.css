@@ -3,12 +3,41 @@
 	height: 65%;
 }
 
+#r1_1FileContainer{
+
+}
+
 #r1_2{
+
+	height: 100%;
+	width: 24%;
+	border-style: solid;
+}
+
+#r1_2FileContainer{
 
 
 }
 
 #r1_3{
 
+	height: 100%;
+	width: 74%;
+	float: right;
+}
 
+#r1_2, #r1_3{
+
+	display: inline-block;	
+	border-style: solid;
+}
+
+#r1_3FileContainer{
+
+	left: 4%;
+}
+
+#r1_2FileContainer, #r1_3FileContainer{
+
+	top: 80%;
 }

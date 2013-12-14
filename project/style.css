@@ -57,10 +57,17 @@ body{
 .botContainer{
 
 	height: 40%;
-	width: 96%;
+	width: 98%;
 	float: left;
 	margin-top: 1%;
-	margin-left: 2%;
+	margin-left: 1%;
+}
+
+.fileContainer{
+
+	position: relative;
+	top: 87%;
+	left: 10%;
 }
 
 #submitContainer{
@@ -72,7 +79,7 @@ body{
 	clear: both;
 }
 
-.tv, .addLeft, .botContainer{
+.tv, .addLeft{
 
 	border-style: solid;
 }
