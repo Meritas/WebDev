@@ -69,6 +69,7 @@ body{
 	position: relative;
 	top: 87%;
 	left: 10%;
+	overflow: hidden;
 }
 
 #submitContainer{
@@ -78,6 +79,7 @@ body{
 	margin-top: 5%;
 	text-align: center;
 	clear: both;
+	overflow: hidden;
 }
 
 .tv, .addLeft{
