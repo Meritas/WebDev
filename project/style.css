@@ -10,6 +10,13 @@ body{
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	background-image: url('background.jpg');
+	background-repeat:no-repeat;
+	background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
 }
 
 #containerForm{
@@ -18,8 +25,8 @@ body{
 	width: 96%;
 	padding-top: 1%;
 	margin-left: 2%;
-	position: relative;
-	bottom: 2%;
+	position: absolute;
+	z-index: 1;	
 }
 
 #mainContainer{
@@ -27,6 +34,23 @@ body{
 	height: 85%;
 	width: 100%;
 	margin-top: 1%;
+}
+
+#MenuBar {
+	height: 100%;
+	width: 15%;
+	border-style: solid;
+	background-color: grey;
+	position: absolute;
+	z-index: 2;
+	border-top-right-radius: 2%;
+}
+
+.Lines {
+	height: 20%;
+	width: 100%;
+	background-color: grey;
+	border-style: solid;
 }
 
 .addLeft{
@@ -69,7 +93,6 @@ body{
 	position: relative;
 	top: 87%;
 	left: 10%;
-	overflow: hidden;
 }
 
 #submitContainer{
@@ -79,7 +102,6 @@ body{
 	margin-top: 5%;
 	text-align: center;
 	clear: both;
-	overflow: hidden;
 }
 
 .tv, .addLeft{
