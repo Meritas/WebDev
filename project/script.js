@@ -73,7 +73,7 @@ $(document).ready(function(){
                                 image.src = ev2.target.result;
                                 if ( isRealImage(image) ){
 	                                if( (image.width>x)||(image.height>y) ){
-	                                        alert("Invalide image dimensions!");
+	                                        alert("Invalid image dimensions!");
 	                                        thisFI.value = "";
 	                                }
 	                            }
@@ -84,7 +84,7 @@ $(document).ready(function(){
                         fr.readAsDataURL(f);
                 }
                 else{
-                        alert("Invalide file type!");
+                        alert("Invalid file type!");
                         this.value = "";
                 }
         });
