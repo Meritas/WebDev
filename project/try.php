@@ -33,6 +33,17 @@ function call_case($case){
 		<title>Try</title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<link rel="stylesheet" type="text/css" href="./caseOneStyle.css">
+		<style>
+			#r1_1{
+				background-image: url("'.query_image("Pict1", 1).'");
+			}
+			#r1_2{
+				background-image: url("'.query_image("Pict2", 1).'");
+			}
+			#r1_3{
+				background-image: url("'.query_image("Pict3", 1).'");
+			}
+		</style>
 	</head>	
 	<body>
 		<script src="jquery.js"></script>
@@ -73,6 +84,14 @@ function call_case($case){
 		<title>Try</title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<link rel="stylesheet" type="text/css" href="./caseTwoStyle.css">
+		<style>
+			#r2_1{
+				background-image: url("'.query_image("Pict1", 2).'");
+			}
+			#r2_3{
+				background-image: url("'.query_image("Pict2", 2).'");
+			}
+		</style>
 	</head>	
 	<body>
 		<script src="jquery.js"></script>
@@ -109,6 +128,14 @@ function call_case($case){
 		<title>Try</title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<link rel="stylesheet" type="text/css" href="./caseThreeStyle.css">
+		<style>
+			#r3_1{
+				background-image: url("'.query_image("Pict1", 3).'");
+			}
+			#r3_3{
+				background-image: url("'.query_image("Pict2", 3).'");
+			}
+		</style>
 	</head>	
 	<body>
 		<script src="jquery.js"></script>
