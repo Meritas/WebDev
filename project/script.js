@@ -121,7 +121,7 @@ $(document).ready(function(){
 		$("#MenuBar").css("width", "15%");
 		$("#MainContainer").css("width", "100%");
 	});
-	$("#MainContainer").mouseenter( function(){
+	$("#MenuBar").mouseleave( function(){
 		$("#MenuBar").css("width", "0%");
 		$("#MainContainer").css("width", "100%");
 

@@ -10,14 +10,20 @@ function call_cases_form(){
 		<link rel="stylesheet" type="text/css" href="./caseOneStyle.css">
 	</head>	
 	<body>
-		<form method="post" action="'.$_SERVER['PHP_SELF'].'">
+		<form method="post" id="ChoicesForm" action="'.$_SERVER['PHP_SELF'].'">
 			<fieldset">
+				<div id="ChoicesDiv">
 				<input type="radio" name="choice" value="0">
 				<label for="choice1">Version 1</label></br>
+				</div>
+				<div id="ChoicesDiv">
 				<input type="radio" name="choice" value="1">
 				<label for="choice2">Version 2</label></br>
+				</div>
+				<div id="ChoicesDiv">
 				<input type="radio" name="choice" value="2">
 				<label for="choice3">Version 3</label>
+				</div>
 				<input type="submit" value="Select">
 			</fieldset>
 		</form>
