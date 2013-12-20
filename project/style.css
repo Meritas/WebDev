@@ -46,6 +46,14 @@ body{
 	border-top-right-radius: 2%;
 }
 
+#HideBut {
+	opacity:0;
+	float: left;
+	height: 100%;
+	width: 3px;
+	background-color: grey;
+}
+
 .Lines {
 	height: 20%;
 	width: 100%;
