@@ -1,4 +1,4 @@
-var resHash = new Array();
+/*var resHash = new Array();
 
 function setAllowedRes(){
 	resHash['file1_1'] = {};
@@ -78,7 +78,7 @@ $(document).ready(function(){
 		if( result[0] ){
 			var x = resHash[this.id]['x'];
 			var y = resHash[this.id]['y'];
-			if( result[1].width>x) || (result[1].height>y) ){
+			if( (result[1].width>x) || (result[1].height>y) ){
 				alert("Invalid image dimensions!");
 				this.value ="";
 			}
@@ -86,9 +86,8 @@ $(document).ready(function(){
 			alert("Invalid file type!")
 			this.value="";
 		}
-	};
 
-});
+});*/
 
 /*$(".fileInput").on('change', function(ev){
 		if( isPicture(this, this.value, ev) ){
