@@ -113,4 +113,20 @@ $(document).ready(function(){
 			this.value = "";
 		}
 	});*/
+	
+	
+	
+$(document).ready(function(){
+	
+	$("#MenuBar").mouseenter( function(){
+		$("#MenuBar").css("width", "15%");
+		$("#MainContainer").css("width", "100%");
+	});
+	$("#MainContainer").mouseenter( function(){
+		$("#MenuBar").css("width", "0%");
+		$("#MainContainer").css("width", "100%");
+
+	});
+	
+});
 
