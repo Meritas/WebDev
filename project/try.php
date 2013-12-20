@@ -62,20 +62,20 @@ function call_case($case){
 			<div id="LineFive" class="Lines"></div>
 		</div>
 		<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
-					<input type="hidden" name="submitted" value="1" />
+					<input type="hidden" name="submitted" value="0" />
 					<div id="mainContainer">
 						<div id="r1_1" class="addLeft">
-							<div id="r1_1FileContainer" class="fileContainer"> <input type="file" /></div>
+							<div id="r1_1FileContainer" class="fileContainer"> <input type="file" id="file1_1 name="file1_1" /></div>
 						</div>
 						<div class="tv">
 						</div>
 						<div id="clearDiv"></div>
 						<div class="botContainer">
 							<div id="r1_2" class="addBot">
-								<div id="r1_2FileContainer" class="fileContainer"> <input type="file" /></div>
+								<div id="r1_2FileContainer" class="fileContainer"> <input type="file" id="file1_2" name="file1_2" /></div>
 							</div>
 							<div id="r1_3" class="addBot">
-								<div id="r1_3FileContainer" class="fileContainer"> <input type="file" /></div>
+								<div id="r1_3FileContainer" class="fileContainer"> <input type="file" id="file1_3" name="file1_3" /></div>
 							</div>
 						</div>				
 					</div>		
@@ -113,13 +113,13 @@ function call_case($case){
 					<input type="hidden" name="submitted" value="1" />
 					<div id="mainContainer">
 						<div id="r2_1" class="addLeft">
-							<div id="r2_1FileContainer" class="fileContainer"> <input type="file" /></div>
+							<div id="r2_1FileContainer" class="fileContainer"> <input type="file" id="file2_1" name="file2_1" /></div>
 						</div>
 						<div id="rightContainer">
 							<div class="tv">
 							</div>
 							<div id="r2_3">
-								<div id="r2_3FileContainer" class="fileContainer"> <input type="file" /></div>
+								<div id="r2_3FileContainer" class="fileContainer"> <input type="file" id="file2_3" name="file2_3" /></div>
 							</div>
 						</div>
 					</div>		
@@ -154,17 +154,17 @@ function call_case($case){
 			<div id="LineFive" class="Lines"></div>
 		</div>
 		<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
-					<input type="hidden" name="submitted" value="1" />
+					<input type="hidden" name="submitted" value="2" />
 					<div id="mainContainer">
 						<div id="r3_1" class="addLeft">
-							<div id="r3_1FileContainer" class="fileContainer"> <input type="file" /></div>
+							<div id="r3_1FileContainer" class="fileContainer"> <input type="file" id="file3_1" name="file3_1" /></div>
 						</div>
 						<div class="tv">
 						</div>
 						<div id="clearDiv"></div>
 						<div class="botContainer">
 							<div id="r3_3" class="addBot">
-								<div id="r3_3FileContainer" class="fileContainer"> <input type="file" /></div>
+								<div id="r3_3FileContainer" class="fileContainer"> <input type="file" id="file3_3" name="file3_3" /></div>
 							</div>
 						</div>				
 					</div>		
