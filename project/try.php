@@ -4,6 +4,12 @@ include_once "php_lib.php";
 function call_cases_form(){
 
 	$str = '
+	<head>
+		<title>Try</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" type="text/css" href="./caseOneStyle.css">
+	</head>	
+	<body>
 		<form method="post" action="'.$_SERVER['PHP_SELF'].'">
 			<fieldset">
 				<input type="radio" name="choice" value="0">
@@ -15,71 +21,125 @@ function call_cases_form(){
 				<input type="submit" value="Select">
 			</fieldset>
 		</form>
+	</body>
 	';
 	echo $str;
 }
 
 function call_case($case){
 
-	$case1_str = '<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
-			<input type="hidden" name="submitted" value="1" />
-			<div id="containerDiv">
-				<div id="r1_1" class="addLeft">
-				</div>
-				<div id="r1_1FileContainer" class="fileContainer"><input type="file" name="file1_1" id="file1_1" class="fileInput"></div>
-				<div id="tv1" class="tv">
-				</div>
-				<div id="botContainer">
-					<div id="r1_2" class="addBot">
-					</div>
-					<div id="r1_2FileContainer" class="fileContainer"><input type="file" name="file1_2" id="file1_2" class="fileInput"></div>
-					<div id="r1_3" class="addBot"></div>
-					<div id="r1_3FileContainer" class="fileContainer"><input type="file" name="file1_3" id="file1_3" class="fileInput"></div>
-				</div>
-			</div>			
-			<div id="submitContainer">
-				<input type="submit" value="Apply Changes" id="submitButton">
-			</div>	
+	$case1_str = '
+	<head>
+		<title>Try</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" type="text/css" href="./caseOneStyle.css">
+	</head>	
+	<body>
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>	
+		<div id="MenuBar">
+			<div id="LineOne" class="Lines"></div>
+			<div id="LineTwo" class="Lines"></div>
+			<div id="LineThree" class="Lines"></div>
+			<div id="LineFour" class="Lines"></div>
+			<div id="LineFive" class="Lines"></div>
+		</div>
+		<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
+					<input type="hidden" name="submitted" value="1" />
+					<div id="mainContainer">
+						<div id="r1_1" class="addLeft">
+							<div id="r1_1FileContainer" class="fileContainer"> <input type="file" /></div>
+						</div>
+						<div class="tv">
+						</div>
+						<div id="clearDiv"></div>
+						<div class="botContainer">
+							<div id="r1_2" class="addBot">
+								<div id="r1_2FileContainer" class="fileContainer"> <input type="file" /></div>
+							</div>
+							<div id="r1_3" class="addBot">
+								<div id="r1_3FileContainer" class="fileContainer"> <input type="file" /></div>
+							</div>
+						</div>				
+					</div>		
+					<div id="submitContainer">
+						<input type="submit" value="Apply Changes" id="submitButton">
+					</div>	
 		</form>
+	</body>
 	';
-	$case2_str = '<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
-			<input type="hidden" name="submitted" value="2" />
-			<div id="containerDiv">
-				<div id="r2_1" class="addLeft">
-				</div>
-				<div id="r2_1FileContainer" class="fileContainer"><input type="file" name="file2_1" id="file2_1" class="fileInput"></div>
-				<div id="tv2" class="tv">
-				</div>
-				<div id="botContainer">
-					<div id="r2_2" class="addBot">
-					</div>
-				<div id="r2_2FileContainer" class="fileContainer"><input type="file" name="file2_2" id="file2_2" class="fileInput"></div>
-				</div>
-			</div>
-			<div id="submitContainer">
-				<input type="submit" value="Apply Changes" id="submitButton">
-			</div>	
+	$case2_str = '
+	<head>
+		<title>Try</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" type="text/css" href="./caseTwoStyle.css">
+	</head>	
+	<body>
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>	
+		<div id="MenuBar">
+			<div id="LineOne" class="Lines"></div>
+			<div id="LineTwo" class="Lines"></div>
+			<div id="LineThree" class="Lines"></div>
+			<div id="LineFour" class="Lines"></div>
+			<div id="LineFive" class="Lines"></div>
+		</div>
+		<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
+					<input type="hidden" name="submitted" value="1" />
+					<div id="mainContainer">
+						<div id="r2_1" class="addLeft">
+							<div id="r2_1FileContainer" class="fileContainer"> <input type="file" /></div>
+						</div>
+						<div id="rightContainer">
+							<div class="tv">
+							</div>
+							<div id="r2_3">
+								<div id="r2_3FileContainer" class="fileContainer"> <input type="file" /></div>
+							</div>
+						</div>
+					</div>		
+					<div id="submitContainer">
+						<input type="submit" value="Apply Changes" id="submitButton">
+					</div>	
 		</form>
+	</body>
 	';
-	$case3_str = '<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
-			<input type="hidden" name="submitted" value="3" />
-			<div id="containerDiv">
-				<div id="r3_1" class="addLeft">
-				</div>
-				<span id="r3_1FileContainer" class="fileContainer"><input type="file" name="file3_1" id="file3_1" class="fileInput"/></span>
-				<img id="testImage"/>
-				<div id="tv3" class="tv">
-				</div>
-				<div id="botContainer">
-					<div id="r3_2" class="addBot">
-					</div>
-				<div id="r3_2FileContainer" class="fileContainer"><input type="file" name="file3_2" id="file3_2" class="fileInput"></div>
-				</div>
-			</div>			
-			<div id="submitContainer">
-				<input type="submit" value="Apply Changes" id="submitButton">
-			</div>	
+	$case3_str = '
+	<head>
+		<title>Try</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" type="text/css" href="./caseThreeStyle.css">
+	</head>	
+	<body>
+		<script src="jquery.js"></script>
+		<script src="script.js"></script>	
+		<div id="MenuBar">
+			<div id="LineOne" class="Lines"></div>
+			<div id="LineTwo" class="Lines"></div>
+			<div id="LineThree" class="Lines"></div>
+			<div id="LineFour" class="Lines"></div>
+			<div id="LineFive" class="Lines"></div>
+		</div>
+		<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
+					<input type="hidden" name="submitted" value="1" />
+					<div id="mainContainer">
+						<div id="r3_1" class="addLeft">
+							<div id="r3_1FileContainer" class="fileContainer"> <input type="file" /></div>
+						</div>
+						<div class="tv">
+						</div>
+						<div id="clearDiv"></div>
+						<div class="botContainer">
+							<div id="r3_3" class="addBot">
+								<div id="r3_3FileContainer" class="fileContainer"> <input type="file" /></div>
+							</div>
+						</div>				
+					</div>		
+					<div id="submitContainer">
+						<input type="submit" value="Apply Changes" id="submitButton">
+					</div>	
 		</form>
+	</body>
 	';
 
 	$result = array($case1_str, $case2_str, $case3_str);
@@ -90,22 +150,16 @@ function call_case($case){
 ?>
 
 <html>
-<head>
+<!--<head>
 <title>Try</title>
- <link rel="stylesheet" type="text/css" href="./style.css">
- <?php
- 	echo "
- 		<style>
- 			#r1_1{
- 				background-image: url('".query_image(1,1)."');
- 			}
- 		</style>
- 	";
- ?>
-</head>
-<body>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" type="text/css" href="./caseOneStyle.css">
+<link rel="stylesheet" type="text/css" href="./caseTwoStyle.css">
+<link rel="stylesheet" type="text/css" href="./caseThreeStyle.css">
+</head>-->
+<!--<body>
 <script src='jquery.js'></script>
-<script src='script.js'></script>
+<script src='script.js'></script>-->
 <?php
 	if(isset($_POST['choice'])){
 		call_case($_POST['choice']);
@@ -113,5 +167,4 @@ function call_case($case){
 		call_cases_form();
 	}
 ?>
-</body>
 </html> 
