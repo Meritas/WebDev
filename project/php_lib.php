@@ -3,7 +3,7 @@
 include_once "config.php";
 
 function query_image($pictNum, $promoType){
-
+	
 	$query = $GLOBALS["dbLink"]->query("SELECT {$pictNum} FROM promo WHERE PromoType={$promoType};");
 	$result = $query->fetch_assoc();
 	return $result["{$pictNum}"];
