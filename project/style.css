@@ -22,12 +22,13 @@ body{
 }
 
 #ChoicesDiv{
-	margin-top: 5%;
-	margin-left: 5%;
-	height: 10%;
-	width: 15%;
+	margin-top: 20%;
+	margin-left: 10%;
+	height: 15%;
+	width: 20%;
 	background-color: #A0A0A0;
-	border-radius: 5%;	
+	border-radius: 5%;
+	display: inline-block;
 
 }
 

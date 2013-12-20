@@ -60,7 +60,7 @@ $(document).ready(function(){
 
         setAllowedRes();
 
-        $(".fileInput").on('change', function(ev){
+        $('input[type=file]').on('change', function(ev){
                 if( isPictureExt(this.value) ){
                         var f = ev.target.files[0];
                         var fr = new FileReader();
