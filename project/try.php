@@ -65,7 +65,7 @@ function call_case($case){
 					<input type="hidden" name="submitted" value="0" />
 					<div id="mainContainer">
 						<div id="r1_1" class="addLeft">
-							<div id="r1_1FileContainer" class="fileContainer"> <input type="file" id="file1_1 name="file1_1" /></div>
+							<div id="r1_1FileContainer" class="fileContainer"> <input type="file" id="file1_1" name="file1_1" /></div>
 						</div>
 						<div class="tv">
 						</div>

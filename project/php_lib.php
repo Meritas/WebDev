@@ -34,8 +34,18 @@ function upload_image3($argFileName, $argFileName2, $argFileName3, $argNamePrefi
 	return array("./upload/".$argNamePrefix."_1.jpg", "./upload/".$argNamePrefix."_2.jpg", "./upload/".$argNamePrefix."_3.jpg");
 }
 
-function randomString() {
-       return md5(rand(100, 200));
+function go_back(){
+
+	echo("
+		<body>
+			<script src='jquery.js'></script>
+			<script src='script.js'></script>
+
+			<script>
+				go_back();
+			</script>
+		</body>
+		");
 }
 
 ?>
