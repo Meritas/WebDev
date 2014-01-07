@@ -131,8 +131,3 @@ body{
 	text-align: center;
 	clear: both;
 }
-
-input[type=file]{
-
-	visibility: hidden;
-}

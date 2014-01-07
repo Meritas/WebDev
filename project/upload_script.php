@@ -22,7 +22,5 @@ if( isset($_POST["submitted"]) ){
 			break;
 	}
 }
-go_back();
-// /header('Location: {$_SERVER["HTTP_REFERER"]}');
 
 ?>
