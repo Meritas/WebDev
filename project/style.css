@@ -17,8 +17,10 @@ body{
 }
 
 input[type=file]{
-
+	
 	visibility: hidden;
+	border-style: solid;
+	background-color: white;
 }
 
 #ChoicesForm{
@@ -126,6 +128,8 @@ input[type=file]{
 	position: relative;
 	top: 87%;
 	left: 10%;
+	overflow: hidden;
+
 }
 
 #submitContainer{
