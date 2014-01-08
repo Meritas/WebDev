@@ -106,3 +106,63 @@ $(document).ready(function(){
 	
 });
 
+
+//File input visibility triggering
+$(document).ready(function(){
+
+    $("#r1_1").mouseenter( function(){
+        $("#file1_1").css("visibility", "visible");
+    });
+    $("#r1_1").mouseleave( function(){
+        $("#file1_1").css("visibility", "hidden");
+    });
+
+    $("#r1_2").mouseenter( function(){
+        $("#file1_2").css("visibility", "visible");
+    });
+    $("#r1_2").mouseleave( function(){
+        $("#file1_2").css("visibility", "hidden");
+    });
+
+    $("#r1_3").mouseenter( function(){
+        $("#file1_3").css("visibility", "visible");
+    });
+    $("#r1_3").mouseleave( function(){
+        $("#file1_3").css("visibility", "hidden");
+    });
+ 
+    $("#r2_1").mouseenter( function(){
+        $("#file2_1").css("visibility", "visible");
+    });
+    $("#r2_1").mouseleave( function(){
+        $("#file2_1").css("visibility", "hidden");
+    });
+
+    $("#r2_3").mouseenter( function(){
+        $("#file2_3").css("visibility", "visible");
+    });
+    $("#r2_3").mouseleave( function(){
+        $("#file2_3").css("visibility", "hidden");
+    });
+
+    $("#r3_1").mouseenter( function(){
+        $("#file3_1").css("visibility", "visible");
+    });
+    $("#r3_1").mouseleave( function(){
+        $("#file3_1").css("visibility", "hidden");
+    });
+
+    $("#r3_3").mouseenter( function(){
+        $("#file3_3").css("visibility", "visible");
+    });
+    $("#r3_3").mouseleave( function(){
+        $("#file3_3").css("visibility", "hidden");
+    });
+});
+
+
+
+function go_back(){
+
+    window.history.back();
+}

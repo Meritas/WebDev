@@ -1,6 +1,16 @@
 <?php
 include_once "php_lib.php";
 
+
+
+/*header("Expires: Tue, 01 Jan 2000 00:00:00 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+*/
+
+
 function call_cases_form(){
 
 	$str = '
@@ -65,7 +75,7 @@ function call_case($case){
 					<input type="hidden" name="submitted" value="0" />
 					<div id="mainContainer">
 						<div id="r1_1" class="addLeft">
-							<div id="r1_1FileContainer" class="fileContainer"> <input type="file" id="file1_1 name="file1_1" /></div>
+							<div id="r1_1FileContainer" class="fileContainer"> <input type="file" id="file1_1" name="file1_1" /></div>
 						</div>
 						<div class="tv">
 						</div>
