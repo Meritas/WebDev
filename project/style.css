@@ -105,7 +105,7 @@ input[type=file]{
 	position: absolute;
 	z-index: 2;
 	border-top-right-radius: 2%;
-}
+} 
 
 #HideBut {
 	opacity:0;

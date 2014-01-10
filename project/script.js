@@ -71,7 +71,6 @@ $(document).ready(function(){
                                 console.dir(ev2);
                                 var image = new Image();
                                 image.src = ev2.target.result;
-                                alert(image.width);
                                 if ( isRealImage(image) ){
 	                                if( (image.width!=x)||(image.height!=y) ){
 	                                        alert("Invalid image dimensions!");
