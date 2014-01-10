@@ -9,20 +9,20 @@ function setAllowedRes(){
         resHash['file3_1'] = {};
         resHash['file3_2'] = {};
 
-        resHash['file1_1']['x'] = 1000;
-        resHash['file1_1']['y'] = 1000;
-        resHash['file1_2']['x'] = 1000;
-        resHash['file1_2']['y'] = 1000;
-        resHash['file1_3']['x'] = 1000;
-        resHash['file1_3']['y'] = 1000;
-        resHash['file2_1']['x'] = 1000;
-        resHash['file2_1']['y'] = 1000;
-        resHash['file2_2']['x'] = 1000;
-        resHash['file2_2']['y'] = 1000;
-        resHash['file3_1']['x'] = 1000;
-        resHash['file3_1']['y'] = 1000;
-        resHash['file3_2']['x'] = 1000;
-        resHash['file3_2']['y'] = 1000;
+        resHash['file1_1']['x'] = 354;
+        resHash['file1_1']['y'] = 405;
+        resHash['file1_2']['x'] = 354;
+        resHash['file1_2']['y'] = 250;
+        resHash['file1_3']['x'] = 896;
+        resHash['file1_3']['y'] = 250;
+        resHash['file2_1']['x'] = 354;
+        resHash['file2_1']['y'] = 705;
+        resHash['file2_2']['x'] = 896;
+        resHash['file2_2']['y'] = 250;
+        resHash['file3_1']['x'] = 354;
+        resHash['file3_1']['y'] = 720;
+        resHash['file3_2']['x'] = 1250;
+        resHash['file3_2']['y'] = 250;
 }
 
 function hasExtension(arg){
@@ -71,8 +71,9 @@ $(document).ready(function(){
                                 console.dir(ev2);
                                 var image = new Image();
                                 image.src = ev2.target.result;
+                                alert(image.width);
                                 if ( isRealImage(image) ){
-	                                if( (image.width>x)||(image.height>y) ){
+	                                if( (image.width!=x)||(image.height!=y) ){
 	                                        alert("Invalid image dimensions!");
 	                                        thisFI.value = "";
 	                                }
