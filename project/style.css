@@ -28,12 +28,40 @@ input[type=file]{
 
 }
 
-#ChoicesDiv{
+#Choice1Div{
 	margin-top: 20%;
-	margin-left: 10%;
+	margin-left: 7%;
 	height: 15%;
 	width: 20%;
-	background-color: #A0A0A0;
+	background-image: url('ch1.png');
+	Background-size: 100% 100%;
+	background-repeat: no-repeat; 
+	border-radius: 5%;
+	display: inline-block;
+
+}
+
+#Choice2Div{
+	margin-top: 20%;
+	margin-left: 7%;
+	height: 15%;
+	width: 20%;
+	background-image: url('ch2.png');
+	Background-size: 100% 100%;
+	background-repeat: no-repeat; 
+	border-radius: 5%;
+	display: inline-block;
+
+}
+
+#Choice3Div{
+	margin-top: 20%;
+	margin-left: 7%;
+	height: 15%;
+	width: 20%;
+	background-image: url('ch3.png');
+	Background-size: 100% 100%;
+	background-repeat: no-repeat; 
 	border-radius: 5%;
 	display: inline-block;
 
@@ -95,7 +123,7 @@ input[type=file]{
 	width: 72%;
 	float: right;
 	margin-right: 1%;
-	background-image: url("./tv.jpg");
+	background-image: url("./tv.png");
 	background-size: cover;
 	background-repeat: no-repeat;
     background-position: 50% 50%;

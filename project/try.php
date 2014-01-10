@@ -22,17 +22,17 @@ function call_cases_form(){
 	<body>
 		<form method="post" id="ChoicesForm" action="'.$_SERVER['PHP_SELF'].'">
 			<fieldset">
-				<div id="ChoicesDiv">
+				<div id="Choice1Div">
 				<input type="radio" name="choice" value="0">
-				<label for="choice1">Version 1</label></br>
+				<label for="choice1"></label></br>
 				</div>
-				<div id="ChoicesDiv">
+				<div id="Choice2Div">
 				<input type="radio" name="choice" value="1">
-				<label for="choice2">Version 2</label></br>
+				<label for="choice2"></label></br>
 				</div>
-				<div id="ChoicesDiv">
+				<div id="Choice3Div">
 				<input type="radio" name="choice" value="2">
-				<label for="choice3">Version 3</label>
+				<label for="choice3"></label>
 				</div>
 				<input type="submit" value="Select">
 			</fieldset>
