@@ -16,6 +16,19 @@ body{
 
 }
 
+#MessageBox {
+	margin-top: 10%;
+	margin-left: 10%;
+	height: 15%;
+	width: 40%;
+	background-color: black;
+	color: white;
+	font-size: xx-large;
+	font-style: italic;
+}
+
+
+
 input[type=file]{
 	
 	visibility: hidden;
@@ -29,7 +42,7 @@ input[type=file]{
 }
 
 #Choice1Div{
-	margin-top: 20%;
+	margin-top: 13%;
 	margin-left: 7%;
 	height: 15%;
 	width: 20%;
@@ -42,7 +55,7 @@ input[type=file]{
 }
 
 #Choice2Div{
-	margin-top: 20%;
+	margin-top: 13%;
 	margin-left: 7%;
 	height: 15%;
 	width: 20%;
@@ -55,7 +68,7 @@ input[type=file]{
 }
 
 #Choice3Div{
-	margin-top: 20%;
+	margin-top: 13%;
 	margin-left: 7%;
 	height: 15%;
 	width: 20%;

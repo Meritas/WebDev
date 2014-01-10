@@ -20,6 +20,9 @@ function call_cases_form(){
 		<link rel="stylesheet" type="text/css" href="./caseOneStyle.css">
 	</head>	
 	<body>
+	
+		<div id="MessageBox">Please, select a template:</div>
+	
 		<form method="post" id="ChoicesForm" action="'.$_SERVER['PHP_SELF'].'">
 			<fieldset">
 				<div id="Choice1Div">
