@@ -26,20 +26,11 @@ body{
 	top: 80%;
 }
 
-#MenuSlide span{
-
-	position: relative;
-	top: 30%;
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-	font-weight: bold;
-}
-
 .MenuSlideBlocks{
 	height: 100%;
 	width: 18%;
 	position: relative;
+	border-style: solid;
 	background-color: grey;
 	display: inline-block;
 	margin: 0;
