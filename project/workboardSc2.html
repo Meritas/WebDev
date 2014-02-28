@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" type="text/css" href="./caseTwoStyle.css">
+</head>
+<body>
+<div id="MenuBar">
+	<div id="LineOne" class="Lines"></div>
+	<div id="LineTwo" class="Lines"></div>
+	<div id="LineThree" class="Lines"></div>
+	<div id="LineFour" class="Lines"></div>
+	<div id="LineFive" class="Lines"></div>
+	<div id="HideBut"></div>
+</div>
+
+<form method="post" id="containerForm" action="upload_script.php" enctype="multipart/form-data">
+			<input type="hidden" name="submitted" value="1" />
+			<div id="mainContainer">
+				<div id="r2_1" class="addLeft">
+					<div id="r2_1FileContainer" class="fileContainer"> <input type="file" /></div>
+				</div>
+				<div id="rightContainer">
+					<div class="tv">
+					</div>
+					<div id="r2_3">
+						<div id="r2_3FileContainer" class="fileContainer"> <input type="file" /></div>
+					</div>
+				</div>
+			</div>		
+			<div id="submitContainer">
+				<input type="submit" value="Apply Changes" id="submitButton">
+			</div>	
+</form>
+</body>
+</html>
